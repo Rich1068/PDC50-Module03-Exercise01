@@ -9,7 +9,7 @@ namespace Module02Exercise01
 {
     public partial class App : Application
     {
-        private const string TestUrl = "https://example.com";
+        private const string TestUrl = "https://reqbin.com";
 
         public App()
         {
@@ -62,7 +62,7 @@ namespace Module02Exercise01
             {
                 using (var client = new HttpClient())
                 {
-                    client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3");
+                    client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0");
                     var response = await client.GetAsync(url);
                     return response.IsSuccessStatusCode;
                 }
