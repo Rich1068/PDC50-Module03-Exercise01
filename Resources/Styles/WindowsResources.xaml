@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.Resources.Styles.WindowsResources">
+    <Color x:Key="White">#000</Color>
+    <Color x:Key="Black">#fff</Color>
+    <Color x:Key="DarkGray">#a3a3a3</Color>
+    <Color x:Key="Gray">#7f7f7f</Color>
+    <Color x:Key="LightGray">#2c2c2c</Color>
+    <Color x:Key="PrimaryButton">#c4a667</Color>
+
+    <x:String x:Key="PrimaryFontFamily">Verdana</x:String>
+
+</ResourceDictionary>

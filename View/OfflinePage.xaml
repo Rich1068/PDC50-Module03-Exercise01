@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.OfflinePage"
+             Title="OfflinePage">
+    <VerticalStackLayout 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        Spacing="20"
+        Padding="30">
+
+        <Label 
+            Text="You are currently offline." 
+            FontSize="24"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Please check your internet connection and try again." 
+            FontSize="16"
+            HorizontalOptions="Center" 
+            TextColor="Gray"/>
+
+    </VerticalStackLayout>
+</ContentPage>

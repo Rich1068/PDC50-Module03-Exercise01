@@ -1,0 +1,65 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.EmployeePage"
+             Title="EmployeePage"
+             BackgroundColor="{DynamicResource DarkGray}">
+    <VerticalStackLayout>
+
+        <Frame Padding="10" Margin="10" 
+               BorderColor="{DynamicResource White}" 
+               BackgroundColor="{DynamicResource Black}"  
+               CornerRadius="10" 
+               HasShadow="true" 
+               HeightRequest="450"  
+               WidthRequest="380">
+            <ListView ItemsSource="{Binding Employees}"
+                      BackgroundColor="{DynamicResource Black}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                         HorizontalOptions="Center"
+                                         VerticalOptions="Center"
+                                         Padding="10" 
+                                Orientation="Vertical">
+                                <Label Text="{Binding EmployeeInfo}" 
+                                       FontSize="14" 
+                                       FontAttributes="Bold"
+                                       FontFamily="{DynamicResource PrimaryFontFamily}"
+                                       TextColor="{DynamicResource White}"
+                                       HorizontalTextAlignment="Center" 
+                                       LineBreakMode="WordWrap"/>
+
+                                <Label Text="{Binding IsActiveString}" 
+                                       FontSize="14" 
+                                       TextColor="{DynamicResource Gray}"
+                                       HorizontalTextAlignment="Center" 
+                                       LineBreakMode="WordWrap"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Frame>
+
+        <Button Text="Load Current Manager"
+                Command="{Binding LoadEmployeeDataCommand}" 
+                WidthRequest="500"
+                BackgroundColor="{DynamicResource PrimaryButton}"
+                TextColor="{DynamicResource White}"
+                FontFamily="{DynamicResource PrimaryFontFamily}"/>
+
+        <Frame Padding="10" Margin="5" 
+               BorderColor="{DynamicResource LightGray}" 
+               BackgroundColor="{DynamicResource LightGray}"
+               CornerRadius="10" 
+               HasShadow="true" 
+               WidthRequest="500">
+            <Label Text="{Binding FullName}" 
+                   FontSize="20" 
+                   HorizontalOptions="Center"
+                   FontFamily="{DynamicResource PrimaryFontFamily}"
+                   TextColor="{DynamicResource Black}"/>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

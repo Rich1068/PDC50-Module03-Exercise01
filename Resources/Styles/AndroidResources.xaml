@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Module02Exercise01.Resources.Styles.AndroidResources">
+
+    <Color x:Key="White">#fff</Color>
+    <Color x:Key="Black">#000</Color>
+    <Color x:Key="DarkGray">darkgray</Color>
+    <Color x:Key="Gray">#808080</Color>
+    <Color x:Key="LightGray">#D3D3D3</Color>
+    <Color x:Key="PrimaryButton">#3B5998</Color>
+
+    <x:String x:Key="PrimaryFontFamily">Verdana</x:String>
+</ResourceDictionary>

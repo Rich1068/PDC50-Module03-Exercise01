@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.LoginPage"
+             Title="Login Page"
+             BackgroundColor="{DynamicResource DarkGray}">
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,70"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            WidthRequest="300">
+
+            <Label 
+                Text="Welcome Back!"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" 
+                FontFamily="{DynamicResource PrimaryFontFamily}"
+                TextColor="{DynamicResource White}"/>
+
+            <Frame 
+                Padding="0" 
+                CornerRadius="12" 
+                BackgroundColor="{DynamicResource White}"
+                BorderColor="{DynamicResource PrimaryButton}"
+                HasShadow="True">
+                <Entry 
+                    x:Name="UsernameEntry"
+                    Placeholder="Username"
+                    Keyboard="Text"
+                    FontFamily="{DynamicResource PrimaryFontFamily}" 
+                    BackgroundColor="{DynamicResource White}"
+                    TextColor="{DynamicResource Black}"
+                    Margin="10,5"/>
+            </Frame>
+
+            <Frame 
+                Padding="0" 
+                CornerRadius="12" 
+                BackgroundColor="{DynamicResource White}"
+                BorderColor="{DynamicResource PrimaryButton}"
+                HasShadow="True">
+                <Entry 
+                    x:Name="PasswordEntry"
+                    Placeholder="Password"
+                    IsPassword="True"
+                    FontFamily="{DynamicResource PrimaryFontFamily}" 
+                    BackgroundColor="{DynamicResource White}"
+                    TextColor="{DynamicResource Black}"
+                    Margin="10,5"/>
+            </Frame>
+
+            <Button 
+                Text="Login"
+                Clicked="OnLoginButtonClicked"
+                FontFamily="{DynamicResource PrimaryFontFamily}"
+                BackgroundColor="{DynamicResource PrimaryButton}"
+                TextColor="{DynamicResource White}"
+                CornerRadius="12"
+                WidthRequest="200"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
